@@ -1,4 +1,4 @@
-# Cisco IOS Function Tracer
+# Cisco IOS Function Trace
 
 ![그림2](https://user-images.githubusercontent.com/56502205/71259830-a8046a80-237c-11ea-932f-f8c5ab7989a4.PNG)
 
