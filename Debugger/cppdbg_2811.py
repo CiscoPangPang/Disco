@@ -17,8 +17,8 @@ import os
 from time import sleep
 import argparse
 
-host = 'Router'
-pw = 'cisco'
+host = None
+pw = None
 
 IDA_OFFSET = None
 IDA_BASE_ADDR = 0x4000f000
@@ -763,20 +763,28 @@ def OnSaveInfo() :
         f.write(buf)
 
 def OnSetArg() :
+    global host
+    global pw
     global IDA_OFFSET
-    parser = argparse.ArgumentParser(description='mips(Cisco IOS C2811)-only Debugger')
+    parser = argparse.ArgumentParser(description='mips(Cisco IOS)-only Debugger')
     add_arg = parser.add_argument
-    add_arg('-o', '--offset', help="Cisco Router IOS Codebase's offset (show region is not real address)", required=True)
-
     parse_arg = parser.parse_args
+
+    add_arg('-n', '--name', help='Router\'s hostname. default is "Router"' , required=False)
+    add_arg('-pw', '--password', help='Router\'s "enable mode" entry password. default is "Cisco"', required=False)
     args = parse_arg()
-    try:
-        IDA_OFFSET = int(args.offset, 16)
-    except TypeError :
-        print '"offset" need to setting hexadecimal'
+    host = args.name
+    pw = args.password
+    print_help()
+
+    if host == None :
+        host = 'Router'
+    if pw == None :
+        pw = 'cisco'
 
 
 def OnStartDbg() :
+    OnSetArg()
     print_help()
     OnSetCiscoBase()
     OnLoadInfo()

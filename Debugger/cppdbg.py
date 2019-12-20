@@ -16,8 +16,8 @@ import os
 from time import sleep
 import argparse
 
-host = 'Router'
-pw = 'cisco'
+host = None
+pw = None
 
 cwd = os.getcwd()
 
@@ -830,7 +830,7 @@ def OnSetArg() :
     parse_arg = parser.parse_args
 
     add_arg('-n', '--name', help='Router\'s hostname. default is "Router"' , required=False)
-    add_arg('-p', '--password', help='Router\'s "enable mode" entry password. default is "Cisco"', required=False)
+    add_arg('-pw', '--password', help='Router\'s "enable mode" entry password. default is "Cisco"', required=False)
     add_arg('-o', '--offset', help="Cisco Router IOS Codebase's offset (show region is not real address)", required=True)
     args = parse_arg()
     host = args.name
@@ -844,7 +844,7 @@ def OnSetArg() :
     if host == None :
         host = 'Router'
     if pw == None :
-        pw = 'Cisco'
+        pw = 'cisco'
 
 def OnSaveInfo() :
     
