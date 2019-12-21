@@ -129,7 +129,7 @@ gogo?
 
 ## Who?
 
-`cppdbg` and `Disco Framework` are open source projects started by the `CiscoPangPang` team, the `KITRI Best of the Best` 8th project team.
+`Debugger` and `Disco Framework` are open source projects started by the `CiscoPangPang` team, the `KITRI Best of the Best` 8th project team.
 
 
 
