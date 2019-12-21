@@ -181,6 +181,7 @@ Now continuing...
 continue...> exit
 ```
 
+![KakaoTalk_20191221_205557618](https://user-images.githubusercontent.com/56502205/71307658-6a631880-2434-11ea-8ac8-409161e710d5.png)
 
 
 ## Who?
