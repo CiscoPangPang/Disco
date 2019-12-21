@@ -158,7 +158,7 @@ Finished sending 1 packets.
 
 ## Who?
 
-`cppdbg` and `Disco Framework` are open source projects started by the `CiscoPangPang` team, the `KITRI Best of the Best` 8th project team.
+`Fuzzer` and `Disco Framework` are open source projects started by the `CiscoPangPang` team, the `KITRI Best of the Best` 8th project team.
 
 
 
