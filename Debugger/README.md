@@ -39,7 +39,7 @@ python -m pip install capstone
 
 ### usage
 
-```
+```sh
 usage: cppdbg.py [-h] [-n NAME] [-pw PASSWORD] -o OFFSET
 
 mips(Cisco IOS)-only Debugger
@@ -59,7 +59,7 @@ optional arguments:
 
 ### usage (cppdbg_2811.py)
 
-```
+```sh
 usage: cppdbg_2811.py [-h] [-n NAME] [-pw PASSWORD]
 
 mips(Cisco IOS)-only Debugger
@@ -82,7 +82,7 @@ Additionally, If you want to know additional `command of debugger`, use `help co
 
 ### example
 
-```
+```sh
 λ rm .info # essential factor
 λ python cppdbg.py -o 0x968
 Command reference:
