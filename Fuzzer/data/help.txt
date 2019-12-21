@@ -1,0 +1,4 @@
+Welcome to [CISCO IOS Monitor] Command Helper!
+Hope it would be helpful for you to use this program by users
+
+- Press [Ctrl] + [L] simultaneously to clear the command logs
